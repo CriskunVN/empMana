@@ -61,7 +61,8 @@ public abstract class NhanVien {
 
     @Override
     public String toString() {
-        return "NhanVien{" + "cmnd=" + cmnd + ", hoTen=" + hoTen + ", phongBan=" + phongBan + ", ngayVaoLam=" + ngayVaoLam + '}';
+        return "NhanVien{" + "cmnd=" + cmnd + ", hoTen=" + hoTen + ", phongBan=" + phongBan + ", ngayVaoLam="
+                + ngayVaoLam + '}';
     }
 
     public int getYear() {
@@ -72,27 +73,34 @@ public abstract class NhanVien {
             Date date = df.parse(ngayVaoLam);
             cld.setTime(date);
             year = cld.get(Calendar.YEAR);
+            System.out.println("12312312");
         } catch (Exception e) {
             e.printStackTrace();
         }
         return year;
     }
+
     public static int getYearNow() {
         Date date = new Date();
         Calendar cld = Calendar.getInstance();
         cld.setTime(date);
-         int yearNow = cld.get(Calendar.YEAR);
-         return yearNow;
+        int yearNow = cld.get(Calendar.YEAR);
+        return yearNow;
     }
+
     public static Date getTimeNow() {
         Date date = new Date();
         Calendar cld = Calendar.getInstance();
         cld.setTime(date);
-         Date now = cld.getTime();
-         return now;
+        Date now = cld.getTime();
+        return now;
     }
+
     public abstract double tinhPhuCap();
+
     public abstract double tinhLuong();
+
     public abstract void showProfile();
+
     public abstract String GroupName();
 }
