@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author CrisKun
+ * @author CrisKuna
  */
 public class EmployeesManagement {
 
@@ -61,7 +61,7 @@ public class EmployeesManagement {
                     int choice2 = 0;
                     System.out.print("Nhập lựa chọn của bạn : ");
                     choice2 = Integer.parseInt(sc.nextLine());
-                    switch (choice) {
+                    switch (choice2) {
                         case 1:
                             list.tongLuongTraNhanVien();
                             break;

@@ -73,7 +73,6 @@ public abstract class NhanVien {
             Date date = df.parse(ngayVaoLam);
             cld.setTime(date);
             year = cld.get(Calendar.YEAR);
-            System.out.println("12312312");
         } catch (Exception e) {
             e.printStackTrace();
         }

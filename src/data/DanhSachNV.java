@@ -28,10 +28,10 @@ public class DanhSachNV {
         System.out.print("Nhập CMND : ");
         cmnd = sc.nextLine().trim();
         
-        System.out.println("Nhập họ tên : ");
+        System.out.print("Nhập họ tên : ");
         hoTen = sc.nextLine().toUpperCase();
         
-        System.out.println("Nhập phòng ban : ");
+        System.out.print("Nhập phòng ban : ");
         phongBan = sc.nextLine().trim().toUpperCase();
         
         while (true) {
@@ -52,9 +52,10 @@ public class DanhSachNV {
                 System.out.println("Định dạng không hợp lệ , Vui lòng nhập chuẩn (dd/MM/yyyy)");
             }
         }
-        
+        System.out.print("Nhập tổng giờ làm : ");
         tongGioLam = Integer.parseInt(sc.nextLine());
         
+        System.out.print("Nhập lương 1 giờ : ");
         tienCong1h = Double.parseDouble(sc.nextLine());
         list.add(new NVHopDong(cmnd, hoTen, phongBan, ngayVaoLam, tongGioLam, tienCong1h));
         System.out.println("Thêm Nhân Viên Hợp Đồng Thành Công");
