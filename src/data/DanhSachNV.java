@@ -171,7 +171,8 @@ public class DanhSachNV {
                  index++;
              }
          }
-         list.get(index).showProfile();
+          list.get(index).showProfile();
+          System.out.print("Lương : " + list.get(index).tinhLuong() );
      }
      
      
@@ -181,9 +182,8 @@ public class DanhSachNV {
              return null;
          }
          ArrayList<NhanVien> listG = new ArrayList<>();
-         nameG = sc.nextLine().trim().toUpperCase();
          for (NhanVien x : list) {
-             if(x.GroupName().equalsIgnoreCase(nameG)) {
+             if(x.GroupName().toUpperCase().equalsIgnoreCase(nameG)) {
                  listG.add(x);
              }
          }
@@ -191,7 +191,7 @@ public class DanhSachNV {
      }
      public void groupNhanVien() {
          String nameG;
-         System.out.printf("Nhập Tên Nhóm Nhân Viên : ");
+         System.out.print("Nhập Tên Nhóm Nhân Viên (BC or HD) : ");
          nameG = sc.nextLine().trim().toUpperCase();
          ArrayList<NhanVien> xxx = checkGroupNhanVien(nameG);
          if (xxx.isEmpty()) {

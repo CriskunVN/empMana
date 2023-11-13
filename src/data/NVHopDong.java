@@ -11,7 +11,7 @@ import java.util.Date;
  * @author CrisKun
  */
 public class NVHopDong extends NhanVien {
-    public String nameG = "Hợp Đồng";
+    public String nameG = "hd";
     private int tongGioLam;
     private double tienCong1h;
 
@@ -43,7 +43,7 @@ public class NVHopDong extends NhanVien {
 
     @Override
     public void showProfile() {
-        System.out.printf("|%10s|%20s|%10s|%10s|%5d|%4.3f|\n",cmnd,hoTen,phongBan,ngayVaoLam,tongGioLam,tienCong1h);
+        System.out.printf("|Nhân Viên Hợp Đồng|%10s|%20s|%10s|%10s|%5d|%4.3f|\n",cmnd,hoTen,phongBan,ngayVaoLam,tongGioLam,tienCong1h);
 
     }
 

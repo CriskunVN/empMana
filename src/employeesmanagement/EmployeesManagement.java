@@ -91,9 +91,10 @@ public class EmployeesManagement {
         System.out.println("2. Xuất Nhân viên lương cao nhất");
         System.out.println("3. Xuất danh sách nhân viên theo loại nhân viên");
         System.out.println("4. Xuất danh sách nhân viên có năm làm việc ");
-        
+
     }
     public static void menu() {
+        System.out.println("\n");
         System.out.println("===========Menu==========");
         System.out.println("1.Thêm nhân viên");
         System.out.println("2.Xuất danh sách Nhân viên");

@@ -11,7 +11,7 @@ import java.util.Date;
  * @author CrisKun
  */
 public class NVBienChe extends NhanVien{
-    private String nameG = "Biên Chế";
+    private String nameG = "bc";
     private double heSoLuong;
     private double phuCap = 200000;
     public NVBienChe(String cmnd, String hoTen, String phongBan, String ngayVaoLam, double heSoLuong) {
@@ -37,7 +37,7 @@ public class NVBienChe extends NhanVien{
 
     @Override
     public void showProfile() {
-        System.out.printf("|%10s|%20s|%10s|%10s|%4.3f|",cmnd,hoTen,phongBan,ngayVaoLam,heSoLuong);
+        System.out.printf("|Nhân Viên Biên Chế|%10s|%20s|%10s|%10s|%4.3f|\n",cmnd,hoTen,phongBan,ngayVaoLam,heSoLuong);
     }
 
     @Override
